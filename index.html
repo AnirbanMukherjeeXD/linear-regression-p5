@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Linear Regression - P5</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+		<script src="sketch.js"></script>
+
+	</head>
+	<body>
+	<br>
+	<center><a href="https://en.wikipedia.org/wiki/Linear_regression" target="_blank"><h1>Linear Regression</h1></a>
+	<br>
+		<div id="graph"></div>
+		<br>
+		<div id="Panel">
+			
+			<h2>Learning Rate:</h2>
+			<br>
+			<input type="text" value="0.2" id="lr" onInput="lrSet(this.value,1)" style="background:rgb(50,50,50);color:rgb(200,200,200);width:140;font-size: 20px" required>&nbsp&nbsp
+			<br><br><input type="range" min="1" max="90" value="20" class="slider" id="lr_slide" onInput="lrSet(this.value/100,0)" width="50%">
+			<br><br>
+			<button onclick="clearAll()">Clear all points</button>
+
+		</div>
+	</center>
+	</body>
+</html>
