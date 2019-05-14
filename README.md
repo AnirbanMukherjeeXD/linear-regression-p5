@@ -5,4 +5,8 @@
 
 Simple Linear Regression application using TensorFlow.js and P5.js.
 
+Tap on the canvas to create points, and the regression line fits using gradient descent.
+
+Change learning rate and see the effect.
+
 Based on the <a href="https://m.youtube.com/watch?v=dLp10CFIvxI"> coding challenge video </a> of <a href="https://m.youtube.com/user/shiffman"> The Coding Train</a> channel.
